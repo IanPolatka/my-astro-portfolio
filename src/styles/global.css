@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+body {
+  background: #fafafa;
+  text-align: center;
+  padding: 3rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding-bottom: 150px;
+}
+
+.dark body {
+  background: #051227;
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background: #fafafa;
+    text-align: center;
+    padding-top: 100px;
+  }
+}
+
+a {
+  color: #1d70f3;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 175%;
+}
+
+p a {
+  text-decoration: underline;
+  color: black;
+}
+
+p a:hover {
+  text-decoration: underline;
+  @apply text-gray-600;
+}
+
+.dark body p a {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.dark body p a:hover {
+  opacity: 0.5;
+}
+
+h1 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 150%;
+  color: #1d70f3;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+svg {
+  height: 18px;
+  width: 18px;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.connect-with-me {
+  background: #eaeaea;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.dark body .connect-with-me,
+.dark body .case-study {
+  background: #1e2f4a;
+  border: transparent;
+}
+
+@media screen and (min-width: 700px) {
+  .connect-with-me {
+    border-radius: 100px;
+  }
+}
+
+.connect-with-me ul {
+  justify-content: center;
+}
+
+.connect-with-me p {
+  margin-bottom: 10px;
+}
+
+.connect-with-me a {
+  padding: 7px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.connect-with-me svg {
+  height: 20px;
+  width: 20px;
+}
+
+.connect-with-me a:hover {
+  opacity: 0.5;
+}
+
+.connect-with-me a.dribbble {
+  border-color: #ea4c89;
+  background-color: #ea4c89;
+  color: #fff;
+}
+
+.connect-with-me a.dribbble svg {
+  fill: #fff;
+}
+
+.connect-with-me a.email {
+  border-color: #999999;
+  background-color: #999999;
+}
+
+.connect-with-me a.email svg {
+  color: #fff;
+}
+
+.connect-with-me a.linkedin {
+  border-color: #0077b5;
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.connect-with-me a.linkedin svg {
+  fill: #fff;
+}
+
+.connect-with-me a.twitter {
+  border-color: #000;
+  background-color: #000;
+  color: #fff;
+}
+
+.connect-with-me a.twitter svg {
+  fill: #fff;
+}
+
+@media screen and (min-width: 700px) {
+  .connect-with-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  .connect-with-me p {
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+}
+
+hr {
+  line-height: 1px;
+  border-color: rgba(0, 0, 0, 0.25);
+  margin: 50px auto;
+  max-width: 50%;
+}
+
+.dark body hr {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+@media screen and (min-width: 700px) {
+  hr {
+    width: 300px;
+  }
+}
+
+.case-study {
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.dark body .case-study {
+  border: 1px solid #1e2f4a;
+}
+
+.case-study a img {
+  border-radius: 5px;
+  max-width: 250px;
+  height: auto;
+}
+
+.case-study div a {
+  text-align: center;
+  justify-content: center;
+}
+
+.dark body .case-study div a {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.dark body .case-study div a:hover {
+  opacity: 0.5;
+}
+
+.case-study h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.case-study p {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .case-study {
+    display: flex;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .case-study h3 {
+    margin-top: 0px;
+  }
+
+  .case-study div a {
+    text-decoration: underline;
+    justify-content: start;
+  }
+}
+
+.theme-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  height: 65px;
+  width: 65px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-button:hover {
+  cursor: pointer;
+}
+
+.theme-button svg {
+  height: 24px;
+  width: 24px;
+}
+
+.dark body .theme-button {
+  background-color: #1d70f3;
+}
+
+@media screen and (min-width: 700px) {
+  .theme-button {
+    top: 20px;
+    right: 20px;
+    bottom: auto;
+    left: auto;
+  }
+}
